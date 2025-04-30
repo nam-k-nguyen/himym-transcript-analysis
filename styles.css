@@ -1,0 +1,194 @@
+/* Main styles for HIMYM Transcript Visualization */
+
+/* Base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+  background: #222 url('images/yellow_umbrella.png') repeat top right;
+  color: #f8e71c;
+
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #0a3d62;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    background-image: linear-gradient(to right, #0a3d62, #3c6382);
+  }
+  
+  .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+  }
+  
+  /* Main content */
+  main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+  }
+  
+  /* Section styles */
+  .viz-section {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .viz-container {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  h2 {
+    color: #0a3d62;
+    margin-bottom: 1rem;
+  }
+  
+  h3 {
+    color: #3c6382;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e9ecef;
+  }
+  
+  /* Season selector */
+  .season-selector-container {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .season-selector-container label {
+    margin-right: 1rem;
+    font-weight: bold;
+  }
+  
+  #season-selector {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    background-color: white;
+    font-size: 1rem;
+  }
+  
+  /* Loading and error messages */
+  .loader {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+    display: none;
+  }
+  
+  .error {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  /* Tooltip styles */
+  .tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    pointer-events: none;
+    z-index: 1000;
+    max-width: 200px;
+  }
+  
+  /* Character importance chart */
+  #character-importance svg {
+    margin-top: 1rem;
+  }
+  
+  .bar:hover {
+    opacity: 0.8;
+  }
+  
+  /* Character timeline */
+  #character-timeline svg {
+    margin-top: 1rem;
+  }
+  
+  /* Word cloud */
+  #word-cloud {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .character-selector {
+    margin-bottom: 1rem;
+  }
+  
+  .character-selector select {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    background-color: white;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+  }
+  
+  /* Network visualization */
+  #interaction-network svg {
+    margin-top: 1rem;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+  }
+  
+  /* Footer styles */
+  footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #0a3d62;
+    color: white;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;
+    }
+    
+    .viz-section {
+      padding: 1rem;
+    }
+    
+    svg {
+      max-width: 100%;
+      height: auto;
+    }
+  }
